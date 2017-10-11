@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Рома по-братски</title>
+  <style>
+	body {
+		margin: 0;
+		background-color:;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	
+	#boy {
+		height: 90vh;
+		text-align: center;
+		box-shadow: 0 0 5px #333;
+		
+	}
+	
+	#btn {
+		padding: 10px;
+		margin-top: 1vh;
+		cursor: pointer;
+		color: white;
+		border-radius: 3px;
+		box-shadow: 2px 3px 3px #ddd;
+		background-color: #283238;
+		transition-duration: 0.7s;
+	}
+	
+	#btn:hover {
+		background-color: #384248;
+		box-shadow: 3px 4px 10px #aaa;
+	}
+  </style>
+</head>
+<body> 
+  <img id="boy" src="roma.jpg" align="left">
+  <div id="btn">Рома, скажи по-братски!</div>
+  <script> 
+  var image = new Image();
+  image.src = "Рома по-братски.jpg";
+  
+  var audio = new Audio();
+  audio.src = 'po-bratsci.3gpp';
+	
+  btn.addEventListener("click", function () {
+	func();
+  });
+  
+  function func () {
+	audio.play();
+	
+	boy.src = "Рома по-братски.jpg";
+	
+	setTimeout(function () {
+		boy.src = "roma.jpg";
+	}, 2000);
+  }
+  </script>
+</body>
+</html>
